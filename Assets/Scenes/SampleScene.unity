@@ -1500,6 +1500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1183030804}
   playerGhost: {fileID: 1815510787}
+  distance: 2
 --- !u!114 &1817300402
 MonoBehaviour:
   m_ObjectHideFlags: 0

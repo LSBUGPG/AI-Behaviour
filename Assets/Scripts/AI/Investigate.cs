@@ -11,8 +11,7 @@ public class Investigate : MonoBehaviour
 
     public GameObject player;
     public GameObject playerGhost;
-
-   
+    public float distance;
 
     // Start is called before the first frame update
     void Awake()
@@ -31,7 +30,7 @@ public class Investigate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!agent.hasPath)
+        if (!agent.hasPath || agent.remainingDistance < distance)
         {
             SendMessage("SetBehaviour", "Patrol");
         }
